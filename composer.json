@@ -33,7 +33,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
-        "psr-4": { "Sonata\\NewsBundle\\": "" }
+        "psr-4": { "Confl1kt\\NewsBundle\\": "" }
     },
     "extra": {
         "branch-alias": {
