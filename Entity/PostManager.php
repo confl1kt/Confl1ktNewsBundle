@@ -1,24 +1,14 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Entity;
+namespace Confl1kt\NewsBundle\Entity;
 
 use Doctrine\ORM\Query\Expr\Join;
 use Sonata\ClassificationBundle\Model\CollectionInterface;
 use Sonata\CoreBundle\Model\BaseEntityManager;
-use Sonata\DatagridBundle\Pager\Doctrine\Pager;
-use Sonata\DatagridBundle\ProxyQuery\Doctrine\ProxyQuery;
-use Sonata\NewsBundle\Model\BlogInterface;
-use Sonata\NewsBundle\Model\PostInterface;
-use Sonata\NewsBundle\Model\PostManagerInterface;
+use Sonata\DoctrineORMAdminBundle\Datagrid\Pager;
+use Sonata\DoctrineORMAdminBundle\Datagrid\ProxyQuery;
+use Confl1kt\NewsBundle\Model\BlogInterface;
+use Confl1kt\NewsBundle\Model\PostInterface;
+use Confl1kt\NewsBundle\Model\PostManagerInterface;
 
 class PostManager extends BaseEntityManager implements PostManagerInterface
 {

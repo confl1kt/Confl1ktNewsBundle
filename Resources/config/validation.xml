@@ -5,7 +5,7 @@
         http://symfony.com/schema/dic/services/constraint-mapping-1.0.xsd">
 
 
-    <class name="Sonata\NewsBundle\Model\Post">
+    <class name="Confl1kt\NewsBundle\Model\Post">
         <property name="title">
             <constraint name="NotBlank" />
         </property>
@@ -39,7 +39,7 @@
         </property>
     </class>
 
-    <class name="Sonata\NewsBundle\Model\Comment">
+    <class name="Confl1kt\NewsBundle\Model\Comment">
         <property name="name">
            <constraint name="NotBlank" />
            <constraint name="NotNull" />

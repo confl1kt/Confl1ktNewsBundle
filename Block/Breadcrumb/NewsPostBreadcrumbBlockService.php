@@ -1,20 +1,10 @@
 <?php
-
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Block\Breadcrumb;
+namespace Confl1kt\NewsBundle\Block\Breadcrumb;
 
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\Provider\MenuProviderInterface;
 use Sonata\BlockBundle\Block\BlockContextInterface;
-use Sonata\NewsBundle\Model\BlogInterface;
+use Confl1kt\NewsBundle\Model\BlogInterface;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 
 /**

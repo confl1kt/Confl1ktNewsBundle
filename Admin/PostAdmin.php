@@ -1,16 +1,7 @@
 <?php
+namespace Confl1kt\NewsBundle\Admin;
 
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Admin;
-
+use Doctrine\ORM\QueryBuilder;
 use Knp\Menu\ItemInterface as MenuItemInterface;
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Admin\AdminInterface;
@@ -20,9 +11,9 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Show\ShowMapper;
 use Sonata\FormatterBundle\Formatter\Pool;
 use Sonata\FormatterBundle\Formatter\Pool as FormatterPool;
-use Sonata\NewsBundle\Model\CommentInterface;
-use Sonata\NewsBundle\Permalink\PermalinkInterface;
-use Sonata\UserBundle\Model\UserManagerInterface;
+use Confl1kt\NewsBundle\Model\CommentInterface;
+use Confl1kt\NewsBundle\Permalink\PermalinkInterface;
+use FOS\UserBundle\Model\UserManagerInterface;
 
 class PostAdmin extends Admin
 {
@@ -51,9 +42,8 @@ class PostAdmin extends Admin
             ->add('enabled')
             ->add('title')
             ->add('abstract')
-            ->add('content', null, array('safe' => true))
-            ->add('tags')
-        ;
+            ->add('content', null, ['safe' => true])
+            ->add('tags');
     }
 
     /**
@@ -61,53 +51,51 @@ class PostAdmin extends Admin
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
+        $formMapper->with('Post', ['class' => 'col-md-8']);
         $formMapper
-            ->with('Post', array(
-                    'class' => 'col-md-8',
-                ))
-                ->add('author', 'sonata_type_model_list')
-                ->add('title')
-                ->add('abstract', null, array('attr' => array('rows' => 5)))
-                ->add('content', 'sonata_formatter_type', array(
-                    'event_dispatcher'          => $formMapper->getFormBuilder()->getEventDispatcher(),
-                    'format_field'              => 'contentFormatter',
-                    'source_field'              => 'rawContent',
-                    'source_field_options'      => array(
-                        'horizontal_input_wrapper_class' => $this->getConfigurationPool()->getOption('form_type') == 'horizontal' ? 'col-lg-12' : '',
-                        'attr'                           => array('class' => $this->getConfigurationPool()->getOption('form_type') == 'horizontal' ? 'span10 col-sm-10 col-md-10' : '', 'rows' => 20),
-                    ),
-                    'ckeditor_context'     => 'news',
-                    'target_field'         => 'content',
-                    'listener'             => true,
-                ))
-            ->end()
-            ->with('Status', array(
-                    'class' => 'col-md-4',
-                ))
-                ->add('enabled', null, array('required' => false))
-                ->add('image', 'sonata_type_model_list', array('required' => false), array(
-                    'link_parameters' => array(
-                        'context'      => 'news',
-                        'hide_context' => true,
-                    ),
-                ))
+            ->add('author', 'sonata_type_model_list',[],['admin_code' => 'sonata.admin.user'])
+            ->add('title')
+            ->add('abstract', null, ['attr' => ['rows' => 5]])
+            ->add('content', 'sonata_formatter_type', [
+                'event_dispatcher' => $formMapper->getFormBuilder()->getEventDispatcher(),
+                'format_field' => 'contentFormatter',
+                'source_field' => 'rawContent',
+                'source_field_options' => [
+                    'horizontal_input_wrapper_class' => $this->getConfigurationPool()->getOption('form_type') == 'horizontal' ? 'col-lg-12' : '',
+                    'attr' => [
+                        'class' => $this->getConfigurationPool()->getOption('form_type') == 'horizontal' ? 'span10 col-sm-10 col-md-10' : '',
+                        'rows' => 20
+                    ],
+                ],
+                'ckeditor_context' => 'confl1kt_news',
+                'target_field' => 'content',
+                'listener' => true,
+            ]);
+        $formMapper->end();
 
-                ->add('publicationDateStart', 'sonata_type_datetime_picker', array('dp_side_by_side' => true))
-                ->add('commentsCloseAt', 'sonata_type_datetime_picker', array('dp_side_by_side' => true))
-                ->add('commentsEnabled', null, array('required' => false))
-                ->add('commentsDefaultStatus', 'sonata_news_comment_status', array('expanded' => true))
-            ->end()
+        $formMapper->with('Status', ['class' => 'col-md-4']);
+        $formMapper
+            ->add('enabled', null, ['required' => false])
+            ->add('image', 'sonata_type_model_list', ['required' => false], [
+                'link_parameters' => [
+                    'context' => 'news',
+                    'hide_context' => true,
+                ],
+            ])
+            ->add('publicationDateStart', 'sonata_type_datetime_picker', ['dp_side_by_side' => true])
+            ->add('commentsCloseAt', 'sonata_type_datetime_picker', ['dp_side_by_side' => true])
+            ->add('commentsEnabled', null, ['required' => false])
+            ->add('commentsDefaultStatus', 'sonata_news_comment_status', ['expanded' => true]);
+        $formMapper->end();
 
-            ->with('Classification', array(
-                'class' => 'col-md-4',
-                ))
-                ->add('tags', 'sonata_type_model_autocomplete', array(
-                    'property' => 'name',
-                    'multiple' => 'true',
-                ))
-                ->add('collection', 'sonata_type_model_list', array('required' => false))
-            ->end()
-        ;
+        $formMapper->with('Classification', ['class' => 'col-md-4']);
+        $formMapper
+            ->add('tags', 'sonata_type_model_autocomplete', [
+                'property' => 'name',
+                'multiple' => 'true',
+            ])
+            ->add('collection', 'sonata_type_model_list', ['required' => false]);
+        $formMapper->end();
     }
 
     /**
@@ -116,10 +104,9 @@ class PostAdmin extends Admin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->add('custom', 'string', array('template' => 'SonataNewsBundle:Admin:list_post_custom.html.twig', 'label' => 'Post'))
-            ->add('commentsEnabled', null, array('editable' => true))
-            ->add('publicationDateStart')
-        ;
+            ->add('custom', 'string', ['template' => 'Confl1ktNewsBundle:Admin:list_post_custom.html.twig', 'label' => 'Post'])
+            ->add('commentsEnabled', null, ['editable' => true])
+            ->add('publicationDateStart');
     }
 
     /**
@@ -132,34 +119,28 @@ class PostAdmin extends Admin
         $datagridMapper
             ->add('title')
             ->add('enabled')
-            ->add('tags', null, array('field_options' => array('expanded' => true, 'multiple' => true)))
-            ->add('author')
+            ->add('tags', null, ['field_options' => ['expanded' => true, 'multiple' => true]])
+            //->add('author')
             ->add('with_open_comments', 'doctrine_orm_callback', array(
-//                'callback'   => array($this, 'getWithOpenCommentFilter'),
                 'callback' => function ($queryBuilder, $alias, $field, $data) use ($that) {
                     if (!is_array($data) || !$data['value']) {
                         return;
                     }
-
+                    /** @var QueryBuilder $queryBuilder */
                     $queryBuilder->leftJoin(sprintf('%s.comments', $alias), 'c');
                     $queryBuilder->andWhere('c.status = :status');
                     $queryBuilder->setParameter('status', CommentInterface::STATUS_MODERATE);
                 },
                 'field_type' => 'checkbox',
-            ))
-        ;
+            ));
     }
-
-    /**
-     * {@inheritdoc}
-     }*/
 
     /**
      * {@inheritdoc}
      */
     protected function configureSideMenu(MenuItemInterface $menu, $action, AdminInterface $childAdmin = null)
     {
-        if (!$childAdmin && !in_array($action, array('edit'))) {
+        if (!$childAdmin && !in_array($action, ['edit'])) {
             return;
         }
 
@@ -169,18 +150,21 @@ class PostAdmin extends Admin
 
         $menu->addChild(
             $this->trans('sidemenu.link_edit_post'),
-            array('uri' => $admin->generateUrl('edit', array('id' => $id)))
+            ['uri' => $admin->generateUrl('edit', ['id' => $id])]
         );
 
         $menu->addChild(
             $this->trans('sidemenu.link_view_comments'),
-            array('uri' => $admin->generateUrl('sonata.news.admin.comment.list', array('id' => $id)))
+            ['uri' => $admin->generateUrl('sonata.news.admin.comment.list', ['id' => $id])]
         );
 
         if ($this->hasSubject() && $this->getSubject()->getId() !== null) {
             $menu->addChild(
                 $this->trans('sidemenu.link_view_post'),
-                array('uri' => $admin->getRouteGenerator()->generate('sonata_news_view', array('permalink' => $this->permalinkGenerator->generate($this->getSubject()))))
+                [
+                    'uri' => $admin->getRouteGenerator()->generate('sonata_news_view',
+                        ['permalink' => $this->permalinkGenerator->generate($this->getSubject())])
+                ]
             );
         }
     }

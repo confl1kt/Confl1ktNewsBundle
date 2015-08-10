@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Model;
+namespace Confl1kt\NewsBundle\Model;
 
 use Sonata\ClassificationBundle\Model\CollectionInterface;
 use Sonata\ClassificationBundle\Model\TagInterface;
@@ -136,7 +126,7 @@ interface PostInterface
     /**
      * Add comments.
      *
-     * @param \Sonata\NewsBundle\Model\CommentInterface $comments
+     * @param \Confl1kt\NewsBundle\Model\CommentInterface $comments
      */
     public function addComments(CommentInterface $comments);
 

@@ -4,7 +4,7 @@
       xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mongo-mapping
                     http://doctrine-project.org/schemas/orm/doctrine-mongo-mapping.xsd">
 
-    <mapped-superclass name="Sonata\NewsBundle\Document\BasePost">
+    <mapped-superclass name="Confl1kt\NewsBundle\Document\BasePost">
 
         <field name="title"                 type="string"       fieldName="title"      />
         <field name="abstract"              type="string"       fieldName="abstract"   />

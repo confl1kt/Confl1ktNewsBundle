@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Model;
+namespace Confl1kt\NewsBundle\Model;
 
 interface BlogInterface
 {
@@ -44,7 +34,7 @@ interface BlogInterface
     public function setDescription($description);
 
     /**
-     * @return \Sonata\NewsBundle\Permalink\PermalinkInterface
+     * @return \Confl1kt\NewsBundle\Permalink\PermalinkInterface
      */
     public function getPermalinkGenerator();
 }

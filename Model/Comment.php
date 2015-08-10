@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Model;
+namespace Confl1kt\NewsBundle\Model;
 
 abstract class Comment implements CommentInterface
 {
@@ -65,7 +55,7 @@ abstract class Comment implements CommentInterface
     /**
      * Post for which the comment is related to.
      *
-     * @var \Sonata\NewsBundle\Model\PostInterface
+     * @var PostInterface
      */
     protected $post;
 

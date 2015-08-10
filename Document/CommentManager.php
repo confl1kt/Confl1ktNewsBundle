@@ -1,22 +1,12 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Document;
+namespace Confl1kt\NewsBundle\Document;
 
 use Sonata\CoreBundle\Model\BaseDocumentManager;
 use Sonata\DoctrineMongoDBAdminBundle\Datagrid\Pager;
 use Sonata\DoctrineMongoDBAdminBundle\Datagrid\ProxyQuery;
-use Sonata\NewsBundle\Model\CommentInterface;
-use Sonata\NewsBundle\Model\CommentManagerInterface;
-use Sonata\NewsBundle\Model\PostInterface;
+use Confl1kt\Model\CommentInterface;
+use Confl1kt\Model\CommentManagerInterface;
+use Confl1kt\Model\PostInterface;
 
 class CommentManager extends BaseDocumentManager implements CommentManagerInterface
 {

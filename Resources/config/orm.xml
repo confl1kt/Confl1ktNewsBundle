@@ -4,8 +4,8 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="sonata.news.manager.comment.class">Sonata\NewsBundle\Entity\CommentManager</parameter>
-        <parameter key="sonata.news.manager.post.class">Sonata\NewsBundle\Entity\PostManager</parameter>
+        <parameter key="sonata.news.manager.comment.class">Confl1kt\NewsBundle\Entity\CommentManager</parameter>
+        <parameter key="sonata.news.manager.post.class">Confl1kt\NewsBundle\Entity\PostManager</parameter>
     </parameters>
 
     <services>

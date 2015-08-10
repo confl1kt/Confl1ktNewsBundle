@@ -1,24 +1,14 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Entity;
+namespace Confl1kt\NewsBundle\Entity;
 
 use Doctrine\Common\Persistence\ManagerRegistry;
 use Sonata\CoreBundle\Model\BaseEntityManager;
 use Sonata\CoreBundle\Model\ManagerInterface;
-use Sonata\DatagridBundle\Pager\Doctrine\Pager;
-use Sonata\DatagridBundle\ProxyQuery\Doctrine\ProxyQuery;
-use Sonata\NewsBundle\Model\CommentInterface;
-use Sonata\NewsBundle\Model\CommentManagerInterface;
-use Sonata\NewsBundle\Model\PostInterface;
+use Sonata\DoctrineORMAdminBundle\Datagrid\Pager;
+use Sonata\DoctrineORMAdminBundle\Datagrid\ProxyQuery;
+use Confl1kt\NewsBundle\Model\CommentInterface;
+use Confl1kt\NewsBundle\Model\CommentManagerInterface;
+use Confl1kt\NewsBundle\Model\PostInterface;
 
 class CommentManager extends BaseEntityManager implements CommentManagerInterface
 {
@@ -93,7 +83,8 @@ class CommentManager extends BaseEntityManager implements CommentManagerInterfac
     /**
      * Update the number of comment for a comment.
      *
-     * @param null|\Sonata\NewsBundle\Model\PostInterface $post
+     * @param null|\Confl1kt\NewsBundle\Model\PostInterface $post
+     * @return mixed|void
      */
     public function updateCommentsCount(PostInterface $post = null)
     {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <serializer>
-    <class name="Sonata\NewsBundle\Model\Post" exclusion-policy="all" xml-root-name="post">
+    <class name="Confl1kt\NewsBundle\Model\Post" exclusion-policy="all" xml-root-name="post">
 
         <property name="title"                type="string"    expose="true"  since-version="1.0" groups="sonata_api_read,sonata_api_write,sonata_search" />
         <property name="abstract"             type="string"    expose="true"  since-version="1.0" groups="sonata_api_read,sonata_api_write,sonata_search" />

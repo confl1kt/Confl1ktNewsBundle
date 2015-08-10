@@ -1,16 +1,7 @@
 <?php
+namespace Confl1kt\NewsBundle\Model;
 
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Model;
-
+use Doctrine\Common\Collections\ArrayCollection;
 use Sonata\ClassificationBundle\Model\CollectionInterface;
 use Sonata\ClassificationBundle\Model\Tag;
 use Sonata\ClassificationBundle\Model\TagInterface;
@@ -207,7 +198,7 @@ abstract class Post implements PostInterface
      */
     public function setComments($comments)
     {
-        $this->comments = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->comments = new ArrayCollection();
 
         foreach ($this->comments as $comment) {
             $this->addComments($comment);

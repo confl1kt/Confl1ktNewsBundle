@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\DependencyInjection;
+namespace Confl1kt\NewsBundle\DependencyInjection;
 
 use Sonata\EasyExtendsBundle\Mapper\DoctrineCollector;
 use Symfony\Component\Config\Definition\Processor;
@@ -20,12 +10,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-/**
- * SonataNewsBundleExtension.
- *
- * @author      Thomas Rabaix <thomas.rabaix@sonata-project.org>
- */
-class SonataNewsExtension extends Extension
+class Confl1ktNewsExtension extends Extension
 {
     /**
      * @throws \InvalidArgumentException
@@ -73,7 +58,7 @@ class SonataNewsExtension extends Extension
 
         $container->setAlias('sonata.news.permalink.generator', $config['permalink_generator']);
 
-        $container->setDefinition('sonata.news.blog', new Definition('Sonata\NewsBundle\Model\Blog', array(
+        $container->setDefinition('sonata.news.blog', new Definition('Confl1kt\NewsBundle\Model\Blog', array(
             $config['title'],
             $config['link'],
             $config['description'],

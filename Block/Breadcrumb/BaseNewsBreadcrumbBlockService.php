@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Block\Breadcrumb;
+namespace Confl1kt\NewsBundle\Block\Breadcrumb;
 
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\SeoBundle\Block\Breadcrumb\BaseBreadcrumbMenuBlockService;
@@ -30,7 +20,7 @@ abstract class BaseNewsBreadcrumbBlockService extends BaseBreadcrumbMenuBlockSer
 
         $menu->addChild('sonata_news_archive_breadcrumb', array(
             'route'  => 'sonata_news_home',
-            'extras' => array('translation_domain' => 'SonataNewsBundle'),
+            'extras' => array('translation_domain' => 'Confl1ktNewsBundle'),
         ));
 
         return $menu;

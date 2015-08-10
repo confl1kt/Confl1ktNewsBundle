@@ -1,19 +1,9 @@
 <?php
+namespace Confl1kt\NewsBundle\Mailer;
 
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Mailer;
-
-use Sonata\NewsBundle\Model\BlogInterface;
-use Sonata\NewsBundle\Model\CommentInterface;
-use Sonata\NewsBundle\Util\HashGeneratorInterface;
+use Confl1kt\NewsBundle\Model\BlogInterface;
+use Confl1kt\NewsBundle\Model\CommentInterface;
+use Confl1kt\NewsBundle\Util\HashGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\Templating\EngineInterface;
 
@@ -32,10 +22,12 @@ class Mailer implements MailerInterface
     protected $blog;
 
     /**
-     * @param \Sonata\NewsBundle\Util\HashGeneratorInterface $generator
-     * @param \Symfony\Component\Routing\RouterInterface     $router
-     * @param \Symfony\Component\Templating\EngineInterface  $templating
-     * @param array                                          $emails
+     * @param $mailer
+     * @param BlogInterface $blog
+     * @param \Confl1kt\NewsBundle\Util\HashGeneratorInterface $generator
+     * @param \Symfony\Component\Routing\RouterInterface $router
+     * @param \Symfony\Component\Templating\EngineInterface $templating
+     * @param array $emails
      */
     public function __construct($mailer, BlogInterface $blog, HashGeneratorInterface $generator, RouterInterface $router, EngineInterface $templating, array $emails)
     {
@@ -48,7 +40,8 @@ class Mailer implements MailerInterface
     }
 
     /**
-     * @param \Sonata\NewsBundle\Model\CommentInterface $comment
+     * @param CommentInterface $comment
+     * @return mixed|void
      */
     public function sendCommentNotification(CommentInterface $comment)
     {

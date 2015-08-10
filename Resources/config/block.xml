@@ -5,7 +5,7 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="sonata.news.block.recent_posts" class="Sonata\NewsBundle\Block\RecentPostsBlockService">
+        <service id="sonata.news.block.recent_posts" class="Confl1kt\NewsBundle\Block\RecentPostsBlockService">
             <tag name="sonata.block"/>
 
             <argument>sonata.news.block.recent_posts</argument>
@@ -14,7 +14,7 @@
             <argument type="service" id="sonata.admin.pool" on-invalid="ignore" />
         </service>
 
-        <service id="sonata.news.block.recent_comments" class="Sonata\NewsBundle\Block\RecentCommentsBlockService">
+        <service id="sonata.news.block.recent_comments" class="Confl1kt\NewsBundle\Block\RecentCommentsBlockService">
             <tag name="sonata.block"/>
 
             <argument>sonata.news.block.recent_comments</argument>
@@ -23,7 +23,7 @@
             <argument type="service" id="sonata.admin.pool" on-invalid="ignore" />
         </service>
 
-        <service id="sonata.news.block.breadcrumb_archive" class="Sonata\NewsBundle\Block\Breadcrumb\NewsArchiveBreadcrumbBlockService">
+        <service id="sonata.news.block.breadcrumb_archive" class="Confl1kt\NewsBundle\Block\Breadcrumb\NewsArchiveBreadcrumbBlockService">
             <tag name="sonata.block"/>
             <tag name="sonata.breadcrumb"/>
 
@@ -34,7 +34,7 @@
             <argument type="service" id="knp_menu.factory" />
         </service>
 
-        <service id="sonata.news.block.breadcrumb_post" class="Sonata\NewsBundle\Block\Breadcrumb\NewsPostBreadcrumbBlockService">
+        <service id="sonata.news.block.breadcrumb_post" class="Confl1kt\NewsBundle\Block\Breadcrumb\NewsPostBreadcrumbBlockService">
             <tag name="sonata.block"/>
             <tag name="sonata.breadcrumb"/>
 

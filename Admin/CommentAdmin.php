@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Admin;
+namespace Confl1kt\NewsBundle\Admin;
 
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -31,34 +21,32 @@ class CommentAdmin extends Admin
      */
     protected function configureFormFields(FormMapper $formMapper)
     {
-        // define group zoning
         $formMapper
             ->with($this->trans('group_comment'), array('class' => 'col-md-6'))->end()
-            ->with($this->trans('group_general'), array('class' => 'col-md-6'))->end()
-        ;
+            ->with($this->trans('group_general'), array('class' => 'col-md-6'))->end();
 
         if (!$this->isChild()) {
+            $formMapper->with($this->trans('group_general'));
             $formMapper
-                ->with($this->trans('group_general'))
-                    ->add('post', 'sonata_type_model_list')
-                ->end()
-            ;
+                    ->add('post', 'sonata_type_model_list');
+            $formMapper->end();
         }
 
+        $formMapper->with($this->trans('group_general'));
         $formMapper
-            ->with($this->trans('group_general'))
                 ->add('name')
                 ->add('email')
                 ->add('url', null, array('required' => false))
-            ->end()
-            ->with($this->trans('group_comment'))
+            ->end();
+
+        $formMapper->with($this->trans('group_comment'));
+        $formMapper
                 ->add('status', 'sonata_news_comment_status', array(
                     'expanded' => true,
                     'multiple' => false,
                 ))
-                ->add('message', null, array('attr' => array('rows' => 6)))
-            ->end()
-        ;
+                ->add('message', null, array('attr' => array('rows' => 6)));
+        $formMapper->end();
     }
 
     /**

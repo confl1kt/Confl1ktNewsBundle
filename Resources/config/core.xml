@@ -7,18 +7,18 @@
     <services>
 
         <!-- permalink generator -->
-        <service id="sonata.news.permalink.date" class="Sonata\NewsBundle\Permalink\DatePermalink">
+        <service id="sonata.news.permalink.date" class="Confl1kt\NewsBundle\Permalink\DatePermalink">
             <argument />
         </service>
 
-        <service id="sonata.news.permalink.collection" class="Sonata\NewsBundle\Permalink\CollectionPermalink" />
+        <service id="sonata.news.permalink.collection" class="Confl1kt\NewsBundle\Permalink\CollectionPermalink" />
 
         <!-- email security token -->
-        <service id="sonata.news.hash.generator" class="Sonata\NewsBundle\Util\HashGenerator">
+        <service id="sonata.news.hash.generator" class="Confl1kt\NewsBundle\Util\HashGenerator">
             <argument />
         </service>
 
-        <service id="sonata.news.mailer" class="Sonata\NewsBundle\Mailer\Mailer">
+        <service id="sonata.news.mailer" class="Confl1kt\NewsBundle\Mailer\Mailer">
             <argument type="service" id="mailer" />
             <argument type="service" id="sonata.news.blog" />
             <argument type="service" id="sonata.news.hash.generator" />

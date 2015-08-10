@@ -1,19 +1,9 @@
 <?php
-
-/*
- * This file is part of sonata-project.
- *
- * (c) 2010 Thomas Rabaix
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Twig\Extension;
+namespace Confl1kt\NewsBundle\Twig\Extension;
 
 use Sonata\CoreBundle\Model\ManagerInterface;
-use Sonata\NewsBundle\Model\BlogInterface;
-use Sonata\NewsBundle\Model\PostInterface;
+use Confl1kt\NewsBundle\Model\BlogInterface;
+use Confl1kt\NewsBundle\Model\PostInterface;
 use Symfony\Component\Routing\RouterInterface;
 
 class NewsExtension extends \Twig_Extension
@@ -89,9 +79,9 @@ class NewsExtension extends \Twig_Extension
     }
 
     /**
-     * @param \Sonata\NewsBundle\Model\PostInterface $post
+     * @param \Confl1kt\NewsBundle\Model\PostInterface $post
      *
-     * @return string|Exception
+     * @return string|\Exception
      */
     public function generatePermalink(PostInterface $post)
     {

@@ -1,21 +1,11 @@
 <?php
+namespace Confl1kt\NewsBundle\Controller;
 
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Controller;
-
-use Sonata\NewsBundle\Model\CommentInterface;
-use Sonata\NewsBundle\Model\PostInterface;
+use Confl1kt\NewsBundle\Model\CommentInterface;
+use Confl1kt\NewsBundle\Model\PostInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Form;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
@@ -39,7 +29,7 @@ class PostController extends Controller
     {
         $pager = $this->getPostManager()->getPager(
             $criteria,
-            $this->getRequest()->get('page', 1)
+            $this->get('request')->get('page', 1)
         );
 
         $parameters = array_merge(array(
@@ -47,13 +37,13 @@ class PostController extends Controller
             'blog'             => $this->get('sonata.news.blog'),
             'tag'              => false,
             'collection'       => false,
-            'route'            => $this->getRequest()->get('_route'),
-            'route_parameters' => $this->getRequest()->get('_route_params'),
+            'route'            => $this->get('request')->get('_route'),
+            'route_parameters' => $this->get('request')->get('_route_params'),
         ), $parameters);
 
-        $response = $this->render(sprintf('SonataNewsBundle:Post:archive.%s.twig', $this->getRequest()->getRequestFormat()), $parameters);
+        $response = $this->render(sprintf('Confl1ktNewsBundle:Post:archive.%s.twig', $this->getRequest()->getRequestFormat()), $parameters);
 
-        if ('rss' === $this->getRequest()->getRequestFormat()) {
+        if ('rss' === $this->get('request')->getRequestFormat()) {
             $response->headers->set('Content-Type', 'application/rss+xml');
         }
 
@@ -163,7 +153,7 @@ class PostController extends Controller
             ;
         }
 
-        return $this->render('SonataNewsBundle:Post:view.html.twig', array(
+        return $this->render('Confl1ktNewsBundle:Post:view.html.twig', array(
             'post' => $post,
             'form' => false,
             'blog' => $this->get('sonata.news.blog'),
@@ -195,7 +185,7 @@ class PostController extends Controller
                 'status'  => CommentInterface::STATUS_VALID,
             ), 1, 500); //no limit
 
-        return $this->render('SonataNewsBundle:Post:comments.html.twig', array(
+        return $this->render('Confl1ktNewsBundle:Post:comments.html.twig', array(
             'pager'  => $pager,
         ));
     }
@@ -216,7 +206,7 @@ class PostController extends Controller
             $form = $this->getCommentForm($post);
         }
 
-        return $this->render('SonataNewsBundle:Post:comment_form.html.twig', array(
+        return $this->render('Confl1ktNewsBundle:Post:comment_form.html.twig', array(
             'form'      => $form->createView(),
             'post_id'   => $postId,
         ));
@@ -275,14 +265,14 @@ class PostController extends Controller
             )));
         }
 
-        return $this->render('SonataNewsBundle:Post:view.html.twig', array(
+        return $this->render('Confl1ktNewsBundle:Post:view.html.twig', array(
             'post' => $post,
             'form' => $form,
         ));
     }
 
     /**
-     * @return \Sonata\NewsBundle\Model\PostManagerInterface
+     * @return \Confl1kt\NewsBundle\Model\PostManagerInterface
      */
     protected function getPostManager()
     {
@@ -290,7 +280,7 @@ class PostController extends Controller
     }
 
     /**
-     * @return \Sonata\NewsBundle\Model\CommentManagerInterface
+     * @return \Confl1kt\NewsBundle\Model\CommentManagerInterface
      */
     protected function getCommentManager()
     {
@@ -298,7 +288,7 @@ class PostController extends Controller
     }
 
     /**
-     * @return \Sonata\NewsBundle\Model\BlogInterface
+     * @return \Confl1kt\NewsBundle\Model\BlogInterface
      */
     protected function getBlog()
     {

@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Model;
+namespace Confl1kt\NewsBundle\Model;
 
 interface CommentInterface
 {
@@ -127,14 +117,14 @@ interface CommentInterface
     /**
      * Set post.
      *
-     * @param \Sonata\NewsBundle\Model\PostInterface $post
+     * @param PostInterface $post
      */
     public function setPost($post);
 
     /**
      * Get post.
      *
-     * @return \Sonata\NewsBundle\Model\PostInterface $post
+     * @return PostInterface $post
      */
     public function getPost();
 }

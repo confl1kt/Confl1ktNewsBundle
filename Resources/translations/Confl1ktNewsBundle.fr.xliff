@@ -1,127 +1,127 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="sl" datatype="plaintext" original="SonataNewsBundle.en.xliff">
+    <file source-language="en" target-language="fr" datatype="plaintext" original="Confl1ktNewsBundle.en.xliff">
         <body>
             <trans-unit id="title_archive">
                 <source>title_archive</source>
-                <target>Arhiv</target>
+                <target>Archive</target>
             </trans-unit>
             <trans-unit id="title_comments">
                 <source>title_comments</source>
-                <target>Komentarji</target>
+                <target>Commentaires</target>
             </trans-unit>
             <trans-unit id="btn_add_comment">
                 <source>btn_add_comment</source>
-                <target>Dodaj komentar</target>
+                <target>Ajouter un commentaire</target>
             </trans-unit>
             <trans-unit id="message_comments_are_closed">
                 <source>message_comments_are_closed</source>
-                <target>Komentiranje trenutne novice ni omogočeno.</target>
+                <target>L'ajout de commentaire est fermé.</target>
             </trans-unit>
             <trans-unit id="no_post_found">
                 <source>no_post_found</source>
-                <target>Ni najdenih objav.</target>
+                <target>Pas d'article disponible.</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_view_post">
                 <source>sidemenu.link_view_post</source>
-                <target>Ogled</target>
+                <target>Voir</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_view_comments">
                 <source>sidemenu.link_view_comments</source>
-                <target>Komentarji</target>
+                <target>Commentaires</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_create">
                 <source>breadcrumb.link_comment_create</source>
-                <target>Ustvari</target>
+                <target>Ajouter</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_list">
                 <source>breadcrumb.link_comment_list</source>
-                <target>Komentarji</target>
+                <target>Commentaires</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_edit">
                 <source>breadcrumb.link_comment_edit</source>
-                <target>Uredi</target>
+                <target>Editer</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_create">
                 <source>breadcrumb.link_post_create</source>
-                <target>Ustvari</target>
+                <target>Ajouter</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_list">
                 <source>breadcrumb.link_post_list</source>
-                <target>Objave</target>
+                <target>Articles</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_edit">
                 <source>breadcrumb.link_post_edit</source>
-                <target>Uredi</target>
+                <target>Editer</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_create">
                 <source>breadcrumb.link_tag_create</source>
-                <target>Ustvari</target>
+                <target>Ajouter</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_list">
                 <source>breadcrumb.link_tag_list</source>
-                <target>Oznake</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_edit">
                 <source>breadcrumb.link_tag_edit</source>
-                <target>Uredi</target>
+                <target>Editer</target>
             </trans-unit>
             <trans-unit id="comments">
                 <source>comments</source>
-                <target>Komentarji</target>
+                <target>Commentaires</target>
             </trans-unit>
             <trans-unit id="posts">
                 <source>posts</source>
-                <target>Objave</target>
+                <target>Articles</target>
             </trans-unit>
             <trans-unit id="categories">
                 <source>categories</source>
-                <target>Kategorije</target>
+                <target>Catégories</target>
             </trans-unit>
             <trans-unit id="tags">
                 <source>tags</source>
-                <target>Oznake</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="no_tag_selected">
                 <source>no_tag_selected</source>
-                <target>Oznaka ni določena</target>
+                <target>Pas de tag sélectionné</target>
             </trans-unit>
             <trans-unit id="published_under">
                 <source>published_under</source>
-                <target>{0}Oznaka ni določena|{1}Oznaka : |{2}Oznaki : |]2,Inf]Oznake :</target>
+                <target>{0}Pas de tag associé|{1}Tag : |]1,Inf]Tags :</target>
             </trans-unit>
             <trans-unit id="archive_author">
                 <source>archive_author</source>
-                <target>avtor %author%</target>
+                <target>de %author%</target>
             </trans-unit>
             <trans-unit id="comments_count">
                 <source>comments_count</source>
-                <target>comments_count</target>
+                <target>%comments_count% commentaires</target>
             </trans-unit>
             <trans-unit id="title_leave_comment">
                 <source>title_leave_comment</source>
-                <target>Komentiraj</target>
+                <target>Rajouter un commentaire</target>
             </trans-unit>
             <trans-unit id="mail_title_comment_notification">
                 <source>mail_title_comment_notification</source>
-                <target>Nov komentar za objavo '%post_title%' na blogu '%blog_title%'
-Nov komentar za objavo "%post_title%" na blogu "%blog_title%"
+                <target>Nouveau commentaire pour l'article '%post_title%' sur le blog '%blog_title%'
+Nouveau commentaire pour l'article "%post_title%" sur le blog "%blog_title%"
 
-Objava: %post_title% - %post_url%
-Avtor: %comment_name%
+Article: %post_title% - %post_url%
+De: %comment_name%
 Email: %comment_email%
 Url: %comment_url%
-Komentar:
+Message:
 %comment_message%
 
-Hitre moderatorske povezave:
-  - potrdi: %comment_valid_link%
-  - ne potrdi: %comment_invalid_link%
+Liens de modération rapide :
+  - valider : %comment_valid_link%
+  - invalider : %comment_invalid_link%
                 </target>
             </trans-unit>
             <trans-unit id="no_comments_available">
                 <source>no_comments_available</source>
-                <target>Komentarji niso na voljo.</target>
+                <target>Pas de commentaires</target>
             </trans-unit>
             <trans-unit id="sonata_blog">
                 <source>sonata_blog</source>
@@ -129,11 +129,11 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="list_label_title">
                 <source>list.label_title</source>
-                <target>Title</target>
+                <target>Titre</target>
             </trans-unit>
             <trans-unit id="list_label_author">
                 <source>list.label_author</source>
-                <target>Author</target>
+                <target>Auteur</target>
             </trans-unit>
             <trans-unit id="list_label_collection">
                 <source>list.label_collection</source>
@@ -141,7 +141,7 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="list_label_enabled">
                 <source>list.label_enabled</source>
-                <target>Enabled</target>
+                <target>Activé</target>
             </trans-unit>
             <trans-unit id="list_label_label_tags">
                 <source>list.label_tags</source>
@@ -149,23 +149,23 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="list_label_comments_enabled">
                 <source>list.label_comments_enabled</source>
-                <target>Comments enabled</target>
+                <target>Commentaires activés</target>
             </trans-unit>
             <trans-unit id="list_label_comments_count">
                 <source>list.label_comments_count</source>
-                <target>Comment count</target>
+                <target>Nombre de commentaires</target>
             </trans-unit>
             <trans-unit id="list.label_publication_date_start">
                 <source>list.label_publication_date_start</source>
-                <target>list.label_publication_date_start</target>
+                <target>Date de début de publication</target>
             </trans-unit>
             <trans-unit id="form_label_enabled">
                 <source>form.label_enabled</source>
-                <target>Enabled</target>
+                <target>Activé</target>
             </trans-unit>
             <trans-unit id="form_label_author">
                 <source>form.label_author</source>
-                <target>Author</target>
+                <target>Auteur</target>
             </trans-unit>
             <trans-unit id="form_label_collection">
                 <source>form.label_collection</source>
@@ -173,15 +173,15 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="form_label_title">
                 <source>form.label_title</source>
-                <target>Title</target>
+                <target>Titre</target>
             </trans-unit>
             <trans-unit id="form_label_abstract">
                 <source>form.label_abstract</source>
-                <target>Abstract</target>
+                <target>Extrait</target>
             </trans-unit>
             <trans-unit id="form_label_content">
                 <source>form.label_content</source>
-                <target>Content</target>
+                <target>Contenu</target>
             </trans-unit>
             <trans-unit id="form_label_tags">
                 <source>form.label_tags</source>
@@ -189,27 +189,27 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="form_label_publication_date_start">
                 <source>form.label_publication_date_start</source>
-                <target>Publication date</target>
+                <target>Date de début de publication</target>
             </trans-unit>
             <trans-unit id="form_label_comments_close_at">
                 <source>form.label_comments_close_at</source>
-                <target>Comments closed at</target>
+                <target>Commentaires fermés à</target>
             </trans-unit>
             <trans-unit id="form_label_comments_enabled">
                 <source>form.label_comments_enabled</source>
-                <target>Comments enabled</target>
+                <target>Commentaires activés</target>
             </trans-unit>
             <trans-unit id="form_label_comments_default_status">
                 <source>form.label_comments_default_status</source>
-                <target>Comment default status</target>
+                <target>Statut par défaut des commentaires</target>
             </trans-unit>
             <trans-unit id="filter_label_title">
                 <source>filter.label_title</source>
-                <target>Title</target>
+                <target>Titre</target>
             </trans-unit>
             <trans-unit id="filter_label_enabled">
                 <source>filter.label_enabled</source>
-                <target>Enabled</target>
+                <target>Activé</target>
             </trans-unit>
             <trans-unit id="filter_label_tags">
                 <source>filter.label_tags</source>
@@ -217,27 +217,27 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="filter_label_author">
                 <source>filter.label_author</source>
-                <target>Author</target>
+                <target>Auteur</target>
             </trans-unit>
             <trans-unit id="filter_label_with_open_comments">
                 <source>filter.label_with_open_comments</source>
-                <target>Open comments</target>
+                <target>Commentaires ouverts</target>
             </trans-unit>
             <trans-unit id="filter.label_post">
                 <source>filter.label_post</source>
-                <target>filter.label_post</target>
+                <target>ID de l'article</target>
             </trans-unit>
             <trans-unit id="list_label_name">
                 <source>list.label_name</source>
-                <target>Name</target>
+                <target>Nom</target>
             </trans-unit>
             <trans-unit id="list_status_code">
                 <source>status_code</source>
-                <target>Status code</target>
+                <target>Code statut</target>
             </trans-unit>
             <trans-unit id="list_label_post">
                 <source>list.label_post</source>
-                <target>Post</target>
+                <target>Article</target>
             </trans-unit>
             <trans-unit id="list_label_email">
                 <source>list.label_email</source>
@@ -253,7 +253,7 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="filter_label_name">
                 <source>filter.label_name</source>
-                <target>Name</target>
+                <target>Nom</target>
             </trans-unit>
             <trans-unit id="filter_label_email">
                 <source>filter.label_email</source>
@@ -265,11 +265,11 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="form_label_post">
                 <source>form.label_post</source>
-                <target>Post</target>
+                <target>Article</target>
             </trans-unit>
             <trans-unit id="form_label_name">
                 <source>form.label_name</source>
-                <target>Name</target>
+                <target>Nom</target>
             </trans-unit>
             <trans-unit id="form_label_email">
                 <source>form.label_email</source>
@@ -285,7 +285,7 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="form_label_status">
                 <source>form.label_status</source>
-                <target>Status</target>
+                <target>Statut</target>
             </trans-unit>
             <trans-unit id="list_label_slug">
                 <source>list.label_slug</source>
@@ -297,7 +297,7 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="breadcrumb_link_collection_list">
                 <source>breadcrumb.link_collection_list</source>
-                <target>Categories</target>
+                <target>Collections</target>
             </trans-unit>
             <trans-unit id="form_label_description">
                 <source>form.label_description</source>
@@ -305,27 +305,27 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="filter_label_posts">
                 <source>filter.label_posts</source>
-                <target>Posts</target>
+                <target>Articles</target>
             </trans-unit>
             <trans-unit id="batch.comment_enable">
                 <source>batch.comment_enable</source>
-                <target>batch.comment_enable</target>
+                <target>Valider</target>
             </trans-unit>
             <trans-unit id="batch.comment_disable">
                 <source>batch.comment_disable</source>
-                <target>batch.comment_disable</target>
+                <target>Invalider</target>
             </trans-unit>
             <trans-unit id="link_previous_page">
                 <source>link_previous_page</source>
-                <target>Previous page</target>
+                <target>Page précédente</target>
             </trans-unit>
             <trans-unit id="link_next_page">
                 <source>link_next_page</source>
-                <target>Next page</target>
+                <target>Page suivante</target>
             </trans-unit>
             <trans-unit id="form.comment.name">
                 <source>form.comment.name</source>
-                <target>Name</target>
+                <target>Nom</target>
             </trans-unit>
             <trans-unit id="form.comment.email">
                 <source>form.comment.email</source>
@@ -341,55 +341,55 @@ Hitre moderatorske povezave:
             </trans-unit>
             <trans-unit id="view_all_posts">
                 <source>view_all_posts</source>
-                <target>view_all_posts</target>
+                <target>Voir tous les articles</target>
             </trans-unit>
             <trans-unit id="post_is_public">
                 <source>post_is_public</source>
-                <target>post_is_public</target>
+                <target>Public</target>
             </trans-unit>
             <trans-unit id="post_is_not_public">
                 <source>post_is_not_public</source>
-                <target>post_is_not_public</target>
+                <target>Privé</target>
             </trans-unit>
             <trans-unit id="label_comment_valid">
                 <source>label_comment_valid</source>
-                <target>label_comment_valid</target>
+                <target>Valide</target>
             </trans-unit>
             <trans-unit id="label_comment_invalid">
                 <source>label_comment_invalid</source>
-                <target>label_comment_invalid</target>
+                <target>Invalide</target>
             </trans-unit>
             <trans-unit id="label_unknown_status">
                 <source>label_unknown_status</source>
-                <target>label_unknown_status</target>
+                <target>Inconnu</target>
             </trans-unit>
             <trans-unit id="label_unknown_moderate">
                 <source>label_unknown_moderate</source>
-                <target>label_unknown_moderate</target>
+                <target>Modéré</target>
             </trans-unit>
             <trans-unit id="view_all_comments">
                 <source>view_all_comments</source>
-                <target>view_all_comments</target>
+                <target>Voir tous les commentaires</target>
             </trans-unit>
             <trans-unit id="sonata_news_archive_breadcrumb">
                 <source>sonata_news_archive_breadcrumb</source>
-                <target>sonata_news_archive_breadcrumb</target>
+                <target>Blog</target>
             </trans-unit>
             <trans-unit id="group_general">
                 <source>group_general</source>
-                <target>group_general</target>
+                <target>Général</target>
             </trans-unit>
             <trans-unit id="group_comment">
                 <source>group_comment</source>
-                <target>group_comment</target>
+                <target>Commentaire</target>
             </trans-unit>
             <trans-unit id="form.label_image">
                 <source>form.label_image</source>
-                <target>form.label_image</target>
+                <target>Image</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_edit_post">
                 <source>sidemenu.link_edit_post</source>
-                <target>sidemenu.link_edit_post</target>
+                <target>Edition</target>
             </trans-unit>
         </body>
     </file>

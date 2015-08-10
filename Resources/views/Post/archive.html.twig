@@ -1,16 +1,3 @@
-{#
-
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-#}
-
 {% sonata_template_box 'This is the archive template. Feel free to override it.' %}
 
 {% block sonata_page_breadcrumb %}
@@ -19,7 +6,7 @@
     </div>
 {% endblock %}
 
-<h1>{{ 'title_archive'|trans({}, 'SonataNewsBundle') }}</h1>
+<h1>{{ 'title_archive'|trans({}, 'Confl1ktNewsBundle') }}</h1>
 
 <div class="sonata-blog-post-list">
     {% for post in pager.getResults() %}
@@ -30,13 +17,13 @@
                 </h2>
 
                 <div class="sonata-blog-post-information">
-                    <span class="sonata-blog-post-author">{{ 'archive_author'|trans({'%author%': post.author }, 'SonataNewsBundle') }}</span> |
+                    <span class="sonata-blog-post-author">{{ 'archive_author'|trans({'%author%': post.author }, 'Confl1ktNewsBundle') }}</span> |
 
                     <i class="icon-calendar"></i>
-                    {{ post.publicationDateStart | format_date }} |
+                    {{ post.publicationDateStart | date('m/d/Y') }} |
 
                     <i class="icon-comment"></i>
-                    <span class="sonata-blog-post-comments-count">{{ 'comments_count'|trans({'%comments_count%': post.commentsCount }, 'SonataNewsBundle') }}</span>
+                    <span class="sonata-blog-post-comments-count">{{ 'comments_count'|trans({'%comments_count%': post.commentsCount }, 'Confl1ktNewsBundle') }}</span>
 
                     <div class="sonata-blog-post-tags">
                         {% if post.tags|length > 1 %}
@@ -44,7 +31,7 @@
                         {% else %}
                             <i class="icon-tag"></i>
                         {% endif %}
-                        {{ 'published_under'|transchoice(post.tags|length, {}, 'SonataNewsBundle') }}
+                        {{ 'published_under'|transchoice(post.tags|length, {}, 'Confl1ktNewsBundle') }}
 
                         {% for tag in post.tags %}
                             <a href="{{ url('sonata_news_tag', { 'tag': tag.slug } ) }}">{{ tag.name }}</a>{% if not loop.last %},{% endif %}
@@ -60,11 +47,19 @@
 
         <hr />
     {% else %}
-        {{ 'no_post_found'|trans({}, 'SonataNewsBundle') }}
+        {{ 'no_post_found'|trans({}, 'Confl1ktNewsBundle') }}
     {% endfor %}
 
     <ul class="pager">
-        <li{% if pager.page == pager.lastPage %} class="disabled"{% endif %}><a href="{{ url(route, route_parameters|merge({'page': pager.nextpage})) }}" title="{{ 'link_previous_page'|trans({}, 'SonataNewsBundle') }}">{{ 'link_previous_page'|trans({}, 'SonataNewsBundle') }}</a>
-        <li{% if pager.page == pager.firstPage %} class="disabled"{% endif %}><a href="{{ url(route, route_parameters|merge({'page': pager.previouspage})) }}" title="{{ 'link_next_page'|trans({}, 'SonataNewsBundle') }}">{{ 'link_next_page'|trans({}, 'SonataNewsBundle') }}</a></li>
+        <li{% if pager.page == pager.lastPage %} class="disabled"{% endif %}>
+            <a href="{{ url(route, route_parameters|merge({'page': pager.nextpage})) }}" title="{{ 'link_previous_page'|trans({}, 'Confl1ktNewsBundle') }}">
+                {{ 'link_previous_page'|trans({}, 'Confl1ktNewsBundle') }}
+            </a>
+        </li>
+        <li{% if pager.page == pager.firstPage %} class="disabled"{% endif %}>
+            <a href="{{ url(route, route_parameters|merge({'page': pager.previouspage})) }}" title="{{ 'link_next_page'|trans({}, 'Confl1ktNewsBundle') }}">
+                {{ 'link_next_page'|trans({}, 'Confl1ktNewsBundle') }}
+            </a>
+        </li>
     </ul>
 </div>

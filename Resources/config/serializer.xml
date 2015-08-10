@@ -6,7 +6,7 @@
 
     <services>
 
-        <service id="sonata.news.serializer.handler.post" class="Sonata\NewsBundle\Serializer\PostSerializerHandler">
+        <service id="sonata.news.serializer.handler.post" class="Confl1kt\NewsBundle\Serializer\PostSerializerHandler">
             <tag name="jms_serializer.subscribing_handler" />
             <argument type="service" id="sonata.news.manager.post" />
         </service>

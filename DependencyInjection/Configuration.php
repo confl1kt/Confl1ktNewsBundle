@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\DependencyInjection;
+namespace Confl1kt\NewsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -27,7 +17,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('sonata_news');
+        $rootNode = $treeBuilder->root('confl1kt_news');
 
         $rootNode
             ->children()
@@ -45,12 +35,12 @@ class Configuration implements ConfigurationInterface
                 ->arrayNode('class')
                     ->addDefaultsIfNotSet()
                     ->children()
-                        ->scalarNode('tag')->defaultValue('Application\\Sonata\\ClassificationBundle\\Entity\\Tag')->end()
-                        ->scalarNode('collection')->defaultValue('Application\\Sonata\\ClassificationBundle\\Entity\\Collection')->end()
-                        ->scalarNode('post')->defaultValue('Application\\Sonata\\NewsBundle\\Entity\\Post')->end()
-                        ->scalarNode('comment')->defaultValue('Application\\Sonata\\NewsBundle\\Entity\\Comment')->end()
-                        ->scalarNode('media')->defaultValue('Application\\Sonata\\MediaBundle\\Entity\\Media')->end()
-                        ->scalarNode('user')->defaultValue('Application\\Sonata\\UserBundle\\Entity\\User')->end()
+                        ->scalarNode('tag')->defaultValue('Sonata\\ClassificationBundle\\Entity\\Tag')->end()
+                        ->scalarNode('collection')->defaultValue('Sonata\\ClassificationBundle\\Entity\\Collection')->end()
+                        ->scalarNode('post')->defaultValue('Application\\AppBundle\\Entity\\Post')->end()
+                        ->scalarNode('comment')->defaultValue('Application\\AppBundle\\Entity\\Comment')->end()
+                        ->scalarNode('media')->defaultValue('Application\\AppBundle\\MediaBundle\\Entity\\Media')->end()
+                        ->scalarNode('user')->defaultValue('Application\\AppBundle\\Entity\\User')->end()
                     ->end()
                 ->end()
 
@@ -60,17 +50,17 @@ class Configuration implements ConfigurationInterface
                         ->arrayNode('post')
                             ->addDefaultsIfNotSet()
                             ->children()
-                                ->scalarNode('class')->cannotBeEmpty()->defaultValue('Sonata\\NewsBundle\\Admin\\PostAdmin')->end()
+                                ->scalarNode('class')->cannotBeEmpty()->defaultValue('Confl1kt\\NewsBundle\\Admin\\PostAdmin')->end()
                                 ->scalarNode('controller')->cannotBeEmpty()->defaultValue('SonataAdminBundle:CRUD')->end()
-                                ->scalarNode('translation')->cannotBeEmpty()->defaultValue('SonataNewsBundle')->end()
+                                ->scalarNode('translation')->cannotBeEmpty()->defaultValue('Confl1ktNewsBundle')->end()
                             ->end()
                         ->end()
                         ->arrayNode('comment')
                             ->addDefaultsIfNotSet()
                             ->children()
-                                ->scalarNode('class')->cannotBeEmpty()->defaultValue('Sonata\\NewsBundle\\Admin\\CommentAdmin')->end()
-                                ->scalarNode('controller')->cannotBeEmpty()->defaultValue('SonataNewsBundle:CommentAdmin')->end()
-                                ->scalarNode('translation')->cannotBeEmpty()->defaultValue('SonataNewsBundle')->end()
+                                ->scalarNode('class')->cannotBeEmpty()->defaultValue('Confl1kt\\NewsBundle\\Admin\\CommentAdmin')->end()
+                                ->scalarNode('controller')->cannotBeEmpty()->defaultValue('Confl1ktNewsBundle:CommentAdmin')->end()
+                                ->scalarNode('translation')->cannotBeEmpty()->defaultValue('Confl1ktNewsBundle')->end()
                             ->end()
                         ->end()
                     ->end()

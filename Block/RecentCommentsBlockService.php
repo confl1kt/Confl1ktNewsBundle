@@ -1,15 +1,5 @@
 <?php
-
-/*
- * This file is part of the Sonata project.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
-namespace Sonata\NewsBundle\Block;
+namespace Confl1kt\NewsBundle\Block;
 
 use Sonata\AdminBundle\Admin\Pool;
 use Sonata\AdminBundle\Form\FormMapper;
@@ -17,7 +7,6 @@ use Sonata\BlockBundle\Block\BaseBlockService;
 use Sonata\BlockBundle\Block\BlockContextInterface;
 use Sonata\BlockBundle\Model\BlockInterface;
 use Sonata\CoreBundle\Model\ManagerInterface;
-use Sonata\CoreBundle\Validator\ErrorElement;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
@@ -27,6 +16,7 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
  */
 class RecentCommentsBlockService extends BaseBlockService
 {
+    /** @var ManagerInterface */
     protected $manager;
 
     protected $adminPool;
@@ -72,14 +62,6 @@ class RecentCommentsBlockService extends BaseBlockService
     /**
      * {@inheritdoc}
      */
-    public function validateBlock(ErrorElement $errorElement, BlockInterface $block)
-    {
-        // TODO: Implement validateBlock() method.
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function buildEditForm(FormMapper $formMapper, BlockInterface $block)
     {
         $formMapper->add('settings', 'sonata_type_immutable_array', array(
@@ -113,7 +95,7 @@ class RecentCommentsBlockService extends BaseBlockService
             'number'     => 5,
             'mode'       => 'public',
             'title'      => 'Recent Comments',
-            'template'   => 'SonataNewsBundle:Block:recent_comments.html.twig',
+            'template'   => 'Confl1ktNewsBundle:Block:recent_comments.html.twig',
         ));
     }
 }

@@ -1,127 +1,127 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="es" datatype="plaintext" original="SonataNewsBundle.en.xliff">
+    <file source-language="en" target-language="sl" datatype="plaintext" original="Confl1ktNewsBundle.en.xliff">
         <body>
             <trans-unit id="title_archive">
                 <source>title_archive</source>
-                <target>Archivo</target>
+                <target>Arhiv</target>
             </trans-unit>
             <trans-unit id="title_comments">
                 <source>title_comments</source>
-                <target>Comentarios</target>
+                <target>Komentarji</target>
             </trans-unit>
             <trans-unit id="btn_add_comment">
                 <source>btn_add_comment</source>
-                <target>Añadir comentario</target>
+                <target>Dodaj komentar</target>
             </trans-unit>
             <trans-unit id="message_comments_are_closed">
                 <source>message_comments_are_closed</source>
-                <target>No se permiten más comentarios.</target>
+                <target>Komentiranje trenutne novice ni omogočeno.</target>
             </trans-unit>
             <trans-unit id="no_post_found">
                 <source>no_post_found</source>
-                <target>Noticia no encontrada.</target>
+                <target>Ni najdenih objav.</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_view_post">
                 <source>sidemenu.link_view_post</source>
-                <target>Ver</target>
+                <target>Ogled</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_view_comments">
                 <source>sidemenu.link_view_comments</source>
-                <target>Comentarios</target>
+                <target>Komentarji</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_create">
                 <source>breadcrumb.link_comment_create</source>
-                <target>Crear</target>
+                <target>Ustvari</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_list">
                 <source>breadcrumb.link_comment_list</source>
-                <target>Comentarios</target>
+                <target>Komentarji</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_edit">
                 <source>breadcrumb.link_comment_edit</source>
-                <target>Editar</target>
+                <target>Uredi</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_create">
                 <source>breadcrumb.link_post_create</source>
-                <target>Crear</target>
+                <target>Ustvari</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_list">
                 <source>breadcrumb.link_post_list</source>
-                <target>Artículos</target>
+                <target>Objave</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_edit">
                 <source>breadcrumb.link_post_edit</source>
-                <target>Editar</target>
+                <target>Uredi</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_create">
                 <source>breadcrumb.link_tag_create</source>
-                <target>Crear</target>
+                <target>Ustvari</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_list">
                 <source>breadcrumb.link_tag_list</source>
-                <target>Etiquetas</target>
+                <target>Oznake</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_edit">
                 <source>breadcrumb.link_tag_edit</source>
-                <target>Editar</target>
+                <target>Uredi</target>
             </trans-unit>
             <trans-unit id="comments">
                 <source>comments</source>
-                <target>Comentarios</target>
+                <target>Komentarji</target>
             </trans-unit>
             <trans-unit id="posts">
                 <source>posts</source>
-                <target>Artículos</target>
+                <target>Objave</target>
             </trans-unit>
             <trans-unit id="categories">
                 <source>categories</source>
-                <target>Categorías</target>
+                <target>Kategorije</target>
             </trans-unit>
             <trans-unit id="tags">
                 <source>tags</source>
-                <target>Etiquetas</target>
+                <target>Oznake</target>
             </trans-unit>
             <trans-unit id="no_tag_selected">
                 <source>no_tag_selected</source>
-                <target>Ninguna etiqueta seleccionada</target>
+                <target>Oznaka ni določena</target>
             </trans-unit>
             <trans-unit id="published_under">
                 <source>published_under</source>
-                <target>{0}Ninguna etiqueta seleccionada|{1}Etiqueta : |]1,Inf]Etiquetas :</target>
+                <target>{0}Oznaka ni določena|{1}Oznaka : |{2}Oznaki : |]2,Inf]Oznake :</target>
             </trans-unit>
             <trans-unit id="archive_author">
                 <source>archive_author</source>
-                <target>por %author%</target>
+                <target>avtor %author%</target>
             </trans-unit>
             <trans-unit id="comments_count">
                 <source>comments_count</source>
-                <target>%comments_count% Comentarios</target>
+                <target>comments_count</target>
             </trans-unit>
             <trans-unit id="title_leave_comment">
                 <source>title_leave_comment</source>
-                <target>Añadir comentario</target>
+                <target>Komentiraj</target>
             </trans-unit>
             <trans-unit id="mail_title_comment_notification">
                 <source>mail_title_comment_notification</source>
-                <target>Alguien ha comentado el artículo '%post_title%' en el blog '%blog_title%'
-Alguien ha comentado el artículo "%post_title%" en el blog "%blog_title%"
+                <target>Nov komentar za objavo '%post_title%' na blogu '%blog_title%'
+Nov komentar za objavo "%post_title%" na blogu "%blog_title%"
 
-Artículo: %post_title% - %post_url%
-De: %comment_name%
-Correo electrónico: %comment_email%
-URL: %comment_url%
-Mensaje:
+Objava: %post_title% - %post_url%
+Avtor: %comment_name%
+Email: %comment_email%
+Url: %comment_url%
+Komentar:
 %comment_message%
 
-Modera el comentario de forma rápida :
-  - Validar: %comment_valid_link%
-  - Invalidar: %comment_invalid_link%
-</target>
+Hitre moderatorske povezave:
+  - potrdi: %comment_valid_link%
+  - ne potrdi: %comment_invalid_link%
+                </target>
             </trans-unit>
             <trans-unit id="no_comments_available">
                 <source>no_comments_available</source>
-                <target>Ningun comentario disponible</target>
+                <target>Komentarji niso na voljo.</target>
             </trans-unit>
             <trans-unit id="sonata_blog">
                 <source>sonata_blog</source>
@@ -129,31 +129,31 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="list_label_title">
                 <source>list.label_title</source>
-                <target>Título</target>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="list_label_author">
                 <source>list.label_author</source>
-                <target>Autor</target>
+                <target>Author</target>
             </trans-unit>
             <trans-unit id="list_label_collection">
                 <source>list.label_collection</source>
-                <target>Categoría</target>
+                <target>Collection</target>
             </trans-unit>
             <trans-unit id="list_label_enabled">
                 <source>list.label_enabled</source>
-                <target>Activado</target>
+                <target>Enabled</target>
             </trans-unit>
             <trans-unit id="list_label_label_tags">
                 <source>list.label_tags</source>
-                <target>Etiquetas</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="list_label_comments_enabled">
                 <source>list.label_comments_enabled</source>
-                <target>Comentarios activados</target>
+                <target>Comments enabled</target>
             </trans-unit>
             <trans-unit id="list_label_comments_count">
                 <source>list.label_comments_count</source>
-                <target>Número de comentarios</target>
+                <target>Comment count</target>
             </trans-unit>
             <trans-unit id="list.label_publication_date_start">
                 <source>list.label_publication_date_start</source>
@@ -161,31 +161,31 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="form_label_enabled">
                 <source>form.label_enabled</source>
-                <target>Activado</target>
+                <target>Enabled</target>
             </trans-unit>
             <trans-unit id="form_label_author">
                 <source>form.label_author</source>
-                <target>Autor</target>
+                <target>Author</target>
             </trans-unit>
             <trans-unit id="form_label_collection">
                 <source>form.label_collection</source>
-                <target>Categoría</target>
+                <target>Collection</target>
             </trans-unit>
             <trans-unit id="form_label_title">
                 <source>form.label_title</source>
-                <target>Título</target>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="form_label_abstract">
                 <source>form.label_abstract</source>
-                <target>Reseña</target>
+                <target>Abstract</target>
             </trans-unit>
             <trans-unit id="form_label_content">
                 <source>form.label_content</source>
-                <target>Contenido</target>
+                <target>Content</target>
             </trans-unit>
             <trans-unit id="form_label_tags">
                 <source>form.label_tags</source>
-                <target>Etiquetas</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="form_label_publication_date_start">
                 <source>form.label_publication_date_start</source>
@@ -197,7 +197,7 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="form_label_comments_enabled">
                 <source>form.label_comments_enabled</source>
-                <target>Comentarios habilitados</target>
+                <target>Comments enabled</target>
             </trans-unit>
             <trans-unit id="form_label_comments_default_status">
                 <source>form.label_comments_default_status</source>
@@ -205,87 +205,87 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="filter_label_title">
                 <source>filter.label_title</source>
-                <target>Título</target>
+                <target>Title</target>
             </trans-unit>
             <trans-unit id="filter_label_enabled">
                 <source>filter.label_enabled</source>
-                <target>Activado</target>
+                <target>Enabled</target>
             </trans-unit>
             <trans-unit id="filter_label_tags">
                 <source>filter.label_tags</source>
-                <target>Etiquetas</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="filter_label_author">
                 <source>filter.label_author</source>
-                <target>Autor</target>
+                <target>Author</target>
             </trans-unit>
             <trans-unit id="filter_label_with_open_comments">
                 <source>filter.label_with_open_comments</source>
-                <target>Comentarios abiertos</target>
+                <target>Open comments</target>
             </trans-unit>
             <trans-unit id="filter.label_post">
                 <source>filter.label_post</source>
-                <target>Artículo</target>
+                <target>filter.label_post</target>
             </trans-unit>
             <trans-unit id="list_label_name">
                 <source>list.label_name</source>
-                <target>Nombre</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="list_status_code">
                 <source>status_code</source>
-                <target>Código de estado</target>
+                <target>Status code</target>
             </trans-unit>
             <trans-unit id="list_label_post">
                 <source>list.label_post</source>
-                <target>Artículo</target>
+                <target>Post</target>
             </trans-unit>
             <trans-unit id="list_label_email">
                 <source>list.label_email</source>
-                <target>Correo electrónico</target>
+                <target>E-mail</target>
             </trans-unit>
             <trans-unit id="list_label_url">
                 <source>list.label_url</source>
-                <target>URL</target>
+                <target>Url</target>
             </trans-unit>
             <trans-unit id="list_label_message">
                 <source>list.label_message</source>
-                <target>Mensaje</target>
+                <target>Message</target>
             </trans-unit>
             <trans-unit id="filter_label_name">
                 <source>filter.label_name</source>
-                <target>Nombre</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="filter_label_email">
                 <source>filter.label_email</source>
-                <target>Correo electrónico</target>
+                <target>E-mail</target>
             </trans-unit>
             <trans-unit id="filter_label_message">
                 <source>filter.label_message</source>
-                <target>Mensaje</target>
+                <target>Message</target>
             </trans-unit>
             <trans-unit id="form_label_post">
                 <source>form.label_post</source>
-                <target>Artículo</target>
+                <target>Post</target>
             </trans-unit>
             <trans-unit id="form_label_name">
                 <source>form.label_name</source>
-                <target>Nombre</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="form_label_email">
                 <source>form.label_email</source>
-                <target>Correo electrónico</target>
+                <target>E-mail</target>
             </trans-unit>
             <trans-unit id="form_label_url">
                 <source>form.label_url</source>
-                <target>URL</target>
+                <target>Url</target>
             </trans-unit>
             <trans-unit id="form_label_message">
                 <source>form.label_message</source>
-                <target>Mensaje</target>
+                <target>Message</target>
             </trans-unit>
             <trans-unit id="form_label_status">
                 <source>form.label_status</source>
-                <target>Estado</target>
+                <target>Status</target>
             </trans-unit>
             <trans-unit id="list_label_slug">
                 <source>list.label_slug</source>
@@ -293,75 +293,75 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="list_label_description">
                 <source>list.label_description</source>
-                <target>Descripción</target>
+                <target>Description</target>
             </trans-unit>
             <trans-unit id="breadcrumb_link_collection_list">
                 <source>breadcrumb.link_collection_list</source>
-                <target>Categorías</target>
+                <target>Categories</target>
             </trans-unit>
             <trans-unit id="form_label_description">
                 <source>form.label_description</source>
-                <target>Descripción</target>
+                <target>Description</target>
             </trans-unit>
             <trans-unit id="filter_label_posts">
                 <source>filter.label_posts</source>
-                <target>Artículos</target>
+                <target>Posts</target>
             </trans-unit>
             <trans-unit id="batch.comment_enable">
                 <source>batch.comment_enable</source>
-                <target>Activado</target>
+                <target>batch.comment_enable</target>
             </trans-unit>
             <trans-unit id="batch.comment_disable">
                 <source>batch.comment_disable</source>
-                <target>Desactivados</target>
+                <target>batch.comment_disable</target>
             </trans-unit>
             <trans-unit id="link_previous_page">
                 <source>link_previous_page</source>
-                <target>Página anterior</target>
+                <target>Previous page</target>
             </trans-unit>
             <trans-unit id="link_next_page">
                 <source>link_next_page</source>
-                <target>Página siguiente</target>
+                <target>Next page</target>
             </trans-unit>
             <trans-unit id="form.comment.name">
                 <source>form.comment.name</source>
-                <target>Nombre</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="form.comment.email">
                 <source>form.comment.email</source>
-                <target>Correo electrónico</target>
+                <target>Email</target>
             </trans-unit>
             <trans-unit id="form.comment.url">
                 <source>form.comment.url</source>
-                <target>URL</target>
+                <target>Url</target>
             </trans-unit>
             <trans-unit id="form.comment.message">
                 <source>form.comment.message</source>
-                <target>Mensaje</target>
+                <target>Message</target>
             </trans-unit>
             <trans-unit id="view_all_posts">
                 <source>view_all_posts</source>
-                <target>Ver todos los artículos</target>
+                <target>view_all_posts</target>
             </trans-unit>
             <trans-unit id="post_is_public">
                 <source>post_is_public</source>
-                <target>Público</target>
+                <target>post_is_public</target>
             </trans-unit>
             <trans-unit id="post_is_not_public">
                 <source>post_is_not_public</source>
-                <target>Privado</target>
+                <target>post_is_not_public</target>
             </trans-unit>
             <trans-unit id="label_comment_valid">
                 <source>label_comment_valid</source>
-                <target>Válido</target>
+                <target>label_comment_valid</target>
             </trans-unit>
             <trans-unit id="label_comment_invalid">
                 <source>label_comment_invalid</source>
-                <target>Inválido</target>
+                <target>label_comment_invalid</target>
             </trans-unit>
             <trans-unit id="label_unknown_status">
                 <source>label_unknown_status</source>
-                <target>Desconocido</target>
+                <target>label_unknown_status</target>
             </trans-unit>
             <trans-unit id="label_unknown_moderate">
                 <source>label_unknown_moderate</source>
@@ -369,7 +369,7 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="view_all_comments">
                 <source>view_all_comments</source>
-                <target>Ver todos los comentarios</target>
+                <target>view_all_comments</target>
             </trans-unit>
             <trans-unit id="sonata_news_archive_breadcrumb">
                 <source>sonata_news_archive_breadcrumb</source>
@@ -377,19 +377,19 @@ Modera el comentario de forma rápida :
             </trans-unit>
             <trans-unit id="group_general">
                 <source>group_general</source>
-                <target>General</target>
+                <target>group_general</target>
             </trans-unit>
             <trans-unit id="group_comment">
                 <source>group_comment</source>
-                <target>Comentario</target>
+                <target>group_comment</target>
             </trans-unit>
             <trans-unit id="form.label_image">
                 <source>form.label_image</source>
-                <target>Imagen</target>
+                <target>form.label_image</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_edit_post">
                 <source>sidemenu.link_edit_post</source>
-                <target>Editar</target>
+                <target>sidemenu.link_edit_post</target>
             </trans-unit>
         </body>
     </file>

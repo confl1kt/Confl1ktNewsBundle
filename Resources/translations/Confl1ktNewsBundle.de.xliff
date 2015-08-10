@@ -1,127 +1,127 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" target-language="sk" datatype="plaintext" original="SonataNewsBundle.en.xliff">
+    <file source-language="en" target-language="de" datatype="plaintext" original="Confl1ktNewsBundle.en.xliff">
         <body>
             <trans-unit id="title_archive">
                 <source>title_archive</source>
-                <target>Archív</target>
+                <target>Archiv</target>
             </trans-unit>
             <trans-unit id="title_comments">
                 <source>title_comments</source>
-                <target>Komentáre</target>
+                <target>Kommentare</target>
             </trans-unit>
             <trans-unit id="btn_add_comment">
                 <source>btn_add_comment</source>
-                <target>Pridať komentár</target>
+                <target>Kommentar hinzufügen</target>
             </trans-unit>
             <trans-unit id="message_comments_are_closed">
                 <source>message_comments_are_closed</source>
-                <target>The comment form is closed for this current news.</target>
+                <target>Die Kommentarfunktion ist für den aktuellen Artikel geschlossen.</target>
             </trans-unit>
             <trans-unit id="no_post_found">
                 <source>no_post_found</source>
-                <target>No post found.</target>
+                <target>Kein Artikel gefunden.</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_view_post">
                 <source>sidemenu.link_view_post</source>
-                <target>Zobraziť</target>
+                <target>Anzeigen</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_view_comments">
                 <source>sidemenu.link_view_comments</source>
-                <target>Komentáre</target>
+                <target>Kommentare</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_create">
                 <source>breadcrumb.link_comment_create</source>
-                <target>Vytvoriť</target>
+                <target>Anlegen</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_list">
                 <source>breadcrumb.link_comment_list</source>
-                <target>Komentáre</target>
+                <target>Kommentare</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_comment_edit">
                 <source>breadcrumb.link_comment_edit</source>
-                <target>Upraviť</target>
+                <target>Bearbeiten</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_create">
                 <source>breadcrumb.link_post_create</source>
-                <target>Vytvoriť</target>
+                <target>Anlegen</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_list">
                 <source>breadcrumb.link_post_list</source>
-                <target>Príspevky</target>
+                <target>Artikel</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_post_edit">
                 <source>breadcrumb.link_post_edit</source>
-                <target>Upraviť</target>
+                <target>Bearbeiten</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_create">
                 <source>breadcrumb.link_tag_create</source>
-                <target>Vytvoriť</target>
+                <target>Anlegen</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_list">
                 <source>breadcrumb.link_tag_list</source>
-                <target>Tagy</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="breadcrumb.link_tag_edit">
                 <source>breadcrumb.link_tag_edit</source>
-                <target>Upraviť</target>
+                <target>Bearbeiten</target>
             </trans-unit>
             <trans-unit id="comments">
                 <source>comments</source>
-                <target>Komentáre</target>
+                <target>Kommentare</target>
             </trans-unit>
             <trans-unit id="posts">
                 <source>posts</source>
-                <target>Príspevky</target>
+                <target>Artikel</target>
             </trans-unit>
             <trans-unit id="categories">
                 <source>categories</source>
-                <target>Kategórie</target>
+                <target>Kategorien</target>
             </trans-unit>
             <trans-unit id="tags">
                 <source>tags</source>
-                <target>Tagy</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="no_tag_selected">
                 <source>no_tag_selected</source>
-                <target>Nebol vybraný žiadny tag</target>
+                <target>Kein Tag ausgewählt</target>
             </trans-unit>
             <trans-unit id="published_under">
                 <source>published_under</source>
-                <target>{0}Nebol vybraný žiadny tag|{1}Tag: |]1,Inf]Tagy:</target>
+                <target>{0}Kein Tag ausgewählt||{1}Tag: |[1,Inf] Veröffentlicht unter :</target>
             </trans-unit>
             <trans-unit id="archive_author">
                 <source>archive_author</source>
-                <target>od %author%</target>
+                <target>von %author%</target>
             </trans-unit>
             <trans-unit id="comments_count">
                 <source>comments_count</source>
-                <target>%comments_count% komentárov</target>
+                <target>%comments_count% Kommentare</target>
             </trans-unit>
             <trans-unit id="title_leave_comment">
                 <source>title_leave_comment</source>
-                <target>Pridať komentár</target>
+                <target>Kommentar hinzufügen</target>
             </trans-unit>
             <trans-unit id="mail_title_comment_notification">
                 <source>mail_title_comment_notification</source>
-                <target>Nový komentár k príspevku '%post_title%' na blogu '%blog_title%'
-Nový komentár k príspevku "%post_title%" na blogu "%blog_title%"
+                <target>New comment for post '%post_title%' on blog '%blog_title%'
+                    New comment for post "%post_title%" on blog "%blog_title%"
 
-Príspevok: %post_title% - %post_url%
-Od: %comment_name%
-E-mail: %comment_email%
-Url: %comment_url%
-Správa:
-%comment_message%
+                    Post: %post_title% - %post_url%
+                    From: %comment_name%
+                    Email: %comment_email%
+                    Url: %comment_url%
+                    Message:
+                    %comment_message%
 
-Rýchle odkazy na moderovanie:
-  - schváliť: %comment_valid_link%
-  - neschváliť: %comment_invalid_link%
+                    Quick moderation links :
+                    - validate: %comment_valid_link%
+                    - invalidate: %comment_invalid_link%
                 </target>
             </trans-unit>
             <trans-unit id="no_comments_available">
                 <source>no_comments_available</source>
-                <target>Žiadne komentáre</target>
+                <target>Keine Kommentare verfügbar</target>
             </trans-unit>
             <trans-unit id="sonata_blog">
                 <source>sonata_blog</source>
@@ -129,7 +129,7 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="list_label_title">
                 <source>list.label_title</source>
-                <target>Názov</target>
+                <target>Titel</target>
             </trans-unit>
             <trans-unit id="list_label_author">
                 <source>list.label_author</source>
@@ -137,31 +137,31 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="list_label_collection">
                 <source>list.label_collection</source>
-                <target>Kolekcia</target>
+                <target>Kategorie</target>
             </trans-unit>
             <trans-unit id="list_label_enabled">
                 <source>list.label_enabled</source>
-                <target>Povolený</target>
+                <target>Aktiviert</target>
             </trans-unit>
             <trans-unit id="list_label_label_tags">
                 <source>list.label_tags</source>
-                <target>Tagy</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="list_label_comments_enabled">
                 <source>list.label_comments_enabled</source>
-                <target>Comments enabled</target>
+                <target>Kommentare aktiviert</target>
             </trans-unit>
             <trans-unit id="list_label_comments_count">
                 <source>list.label_comments_count</source>
-                <target>Comment count</target>
+                <target>Kommentaranzahl</target>
             </trans-unit>
             <trans-unit id="list.label_publication_date_start">
                 <source>list.label_publication_date_start</source>
-                <target>list.label_publication_date_start</target>
+                <target>Publikationsdatum</target>
             </trans-unit>
             <trans-unit id="form_label_enabled">
                 <source>form.label_enabled</source>
-                <target>Povolený</target>
+                <target>Aktiviert</target>
             </trans-unit>
             <trans-unit id="form_label_author">
                 <source>form.label_author</source>
@@ -169,51 +169,51 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="form_label_collection">
                 <source>form.label_collection</source>
-                <target>Kolekcia</target>
+                <target>Kategorie</target>
             </trans-unit>
             <trans-unit id="form_label_title">
                 <source>form.label_title</source>
-                <target>Názov</target>
+                <target>Titel</target>
             </trans-unit>
             <trans-unit id="form_label_abstract">
                 <source>form.label_abstract</source>
-                <target>Prehľad</target>
+                <target>Auszug</target>
             </trans-unit>
             <trans-unit id="form_label_content">
                 <source>form.label_content</source>
-                <target>Obsah</target>
+                <target>Inhalt</target>
             </trans-unit>
             <trans-unit id="form_label_tags">
                 <source>form.label_tags</source>
-                <target>Tagy</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="form_label_publication_date_start">
                 <source>form.label_publication_date_start</source>
-                <target>Dátum publikovania</target>
+                <target>Publikationsdatum</target>
             </trans-unit>
             <trans-unit id="form_label_comments_close_at">
                 <source>form.label_comments_close_at</source>
-                <target>Komentáre uzavreté o</target>
+                <target>Kommentare geschlossen am </target>
             </trans-unit>
             <trans-unit id="form_label_comments_enabled">
                 <source>form.label_comments_enabled</source>
-                <target>Komentáre povolené</target>
+                <target>Kommentare aktiviert</target>
             </trans-unit>
             <trans-unit id="form_label_comments_default_status">
                 <source>form.label_comments_default_status</source>
-                <target>Východiskový stav komentáru</target>
+                <target>Kommentare Standard Status</target>
             </trans-unit>
             <trans-unit id="filter_label_title">
                 <source>filter.label_title</source>
-                <target>Názov</target>
+                <target>Titel</target>
             </trans-unit>
             <trans-unit id="filter_label_enabled">
                 <source>filter.label_enabled</source>
-                <target>Povolený</target>
+                <target>Aktiviert</target>
             </trans-unit>
             <trans-unit id="filter_label_tags">
                 <source>filter.label_tags</source>
-                <target>Tagy</target>
+                <target>Tags</target>
             </trans-unit>
             <trans-unit id="filter_label_author">
                 <source>filter.label_author</source>
@@ -221,23 +221,23 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="filter_label_with_open_comments">
                 <source>filter.label_with_open_comments</source>
-                <target>Open comments</target>
+                <target>Kommentare offen</target>
             </trans-unit>
             <trans-unit id="filter.label_post">
                 <source>filter.label_post</source>
-                <target>filter.label_post</target>
+                <target>Artikel ID</target>
             </trans-unit>
             <trans-unit id="list_label_name">
                 <source>list.label_name</source>
-                <target>Meno</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="list_status_code">
                 <source>status_code</source>
-                <target>Stavový kód</target>
+                <target>Status Code</target>
             </trans-unit>
             <trans-unit id="list_label_post">
                 <source>list.label_post</source>
-                <target>Post</target>
+                <target>Artikel</target>
             </trans-unit>
             <trans-unit id="list_label_email">
                 <source>list.label_email</source>
@@ -249,11 +249,11 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="list_label_message">
                 <source>list.label_message</source>
-                <target>Správa</target>
+                <target>Nachricht</target>
             </trans-unit>
             <trans-unit id="filter_label_name">
                 <source>filter.label_name</source>
-                <target>Meno</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="filter_label_email">
                 <source>filter.label_email</source>
@@ -261,15 +261,15 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="filter_label_message">
                 <source>filter.label_message</source>
-                <target>Správa</target>
+                <target>Nachricht</target>
             </trans-unit>
             <trans-unit id="form_label_post">
                 <source>form.label_post</source>
-                <target>Post</target>
+                <target>Artikel</target>
             </trans-unit>
             <trans-unit id="form_label_name">
                 <source>form.label_name</source>
-                <target>Meno</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="form_label_email">
                 <source>form.label_email</source>
@@ -281,7 +281,7 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="form_label_message">
                 <source>form.label_message</source>
-                <target>Správa</target>
+                <target>Nachricht</target>
             </trans-unit>
             <trans-unit id="form_label_status">
                 <source>form.label_status</source>
@@ -293,43 +293,43 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="list_label_description">
                 <source>list.label_description</source>
-                <target>Popis</target>
+                <target>Beschreibung</target>
             </trans-unit>
             <trans-unit id="breadcrumb_link_collection_list">
                 <source>breadcrumb.link_collection_list</source>
-                <target>Kategórie</target>
+                <target>Kategorien</target>
             </trans-unit>
             <trans-unit id="form_label_description">
                 <source>form.label_description</source>
-                <target>Popis</target>
+                <target>Beschreibung</target>
             </trans-unit>
             <trans-unit id="filter_label_posts">
                 <source>filter.label_posts</source>
-                <target>Príspevky</target>
+                <target>Artikel</target>
             </trans-unit>
             <trans-unit id="batch.comment_enable">
                 <source>batch.comment_enable</source>
-                <target>Povoliť</target>
+                <target>Kommentare aktivieren</target>
             </trans-unit>
             <trans-unit id="batch.comment_disable">
                 <source>batch.comment_disable</source>
-                <target>Zakázať</target>
+                <target>Kommentare deaktivieren</target>
             </trans-unit>
             <trans-unit id="link_previous_page">
                 <source>link_previous_page</source>
-                <target>Predchádzajúca strana</target>
+                <target>Vorherige Seite</target>
             </trans-unit>
             <trans-unit id="link_next_page">
                 <source>link_next_page</source>
-                <target>Nasledujúca strana</target>
+                <target>Nächste Seite</target>
             </trans-unit>
             <trans-unit id="form.comment.name">
                 <source>form.comment.name</source>
-                <target>Meno</target>
+                <target>Name</target>
             </trans-unit>
             <trans-unit id="form.comment.email">
                 <source>form.comment.email</source>
-                <target>E-mail</target>
+                <target>E-Mail</target>
             </trans-unit>
             <trans-unit id="form.comment.url">
                 <source>form.comment.url</source>
@@ -337,59 +337,59 @@ Rýchle odkazy na moderovanie:
             </trans-unit>
             <trans-unit id="form.comment.message">
                 <source>form.comment.message</source>
-                <target>Správa</target>
+                <target>Nachricht</target>
             </trans-unit>
             <trans-unit id="view_all_posts">
                 <source>view_all_posts</source>
-                <target>Zobraziť príspevky</target>
+                <target>Alle Artikel anzeigen</target>
             </trans-unit>
             <trans-unit id="post_is_public">
                 <source>post_is_public</source>
-                <target>verejný</target>
+                <target>Öffentlich</target>
             </trans-unit>
             <trans-unit id="post_is_not_public">
                 <source>post_is_not_public</source>
-                <target>súkromný</target>
+                <target>Privat</target>
             </trans-unit>
             <trans-unit id="label_comment_valid">
                 <source>label_comment_valid</source>
-                <target>platný</target>
+                <target>Gültig</target>
             </trans-unit>
             <trans-unit id="label_comment_invalid">
                 <source>label_comment_invalid</source>
-                <target>neplatný</target>
+                <target>Ungültig</target>
             </trans-unit>
             <trans-unit id="label_unknown_status">
                 <source>label_unknown_status</source>
-                <target>neznámy</target>
+                <target>label_unknown_status</target>
             </trans-unit>
             <trans-unit id="label_unknown_moderate">
                 <source>label_unknown_moderate</source>
-                <target>moderate</target>
+                <target>Unbekannt</target>
             </trans-unit>
             <trans-unit id="view_all_comments">
                 <source>view_all_comments</source>
-                <target>Zobraziť komentáre</target>
+                <target>Alle Kommentare anzeigen</target>
             </trans-unit>
             <trans-unit id="sonata_news_archive_breadcrumb">
                 <source>sonata_news_archive_breadcrumb</source>
-                <target>sonata_news_archive_breadcrumb</target>
+                <target>News</target>
             </trans-unit>
             <trans-unit id="group_general">
                 <source>group_general</source>
-                <target>group_general</target>
+                <target>Allgemein</target>
             </trans-unit>
             <trans-unit id="group_comment">
                 <source>group_comment</source>
-                <target>group_comment</target>
+                <target>Kommentar</target>
             </trans-unit>
             <trans-unit id="form.label_image">
                 <source>form.label_image</source>
-                <target>form.label_image</target>
+                <target>Bild</target>
             </trans-unit>
             <trans-unit id="sidemenu.link_edit_post">
                 <source>sidemenu.link_edit_post</source>
-                <target>sidemenu.link_edit_post</target>
+                <target>Bearbeiten</target>
             </trans-unit>
         </body>
     </file>
