@@ -151,7 +151,7 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
      *
      * @return array
      */
-    protected function getPublicationDateQueryParts($date, $step, $alias = 'p')
+    public function getPublicationDateQueryParts($date, $step, $alias = 'p')
     {
         return array(
             'query'  => sprintf('%s.publicationDateStart >= :startDate AND %s.publicationDateStart < :endDate', $alias, $alias),
@@ -167,7 +167,7 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
      *
      * @return array
      */
-    protected function getPublicationCollectionQueryParts($collection)
+    public function getPublicationCollectionQueryParts($collection)
     {
         $pcqp = array('query' => '', 'params' => array());
 
