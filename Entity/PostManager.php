@@ -133,6 +133,8 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
             $parameters['collectionid'] = $criteria['collection']->getId();
         }
 
+        $this->applyAdditionalCriteria($criteria);
+
         $query->setParameters($parameters);
 
         $pager = new Pager();
@@ -179,5 +181,10 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
         }
 
         return $pcqp;
+    }
+
+    protected function applyAdditionalCriteria(array $criteria = [])
+    {
+
     }
 }
