@@ -134,9 +134,9 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
             $parameters['collectionid'] = $criteria['collection']->getId();
         }
 
-        $this->applyAdditionalCriteria($query, $criteria);
-
         $query->setParameters($parameters);
+
+        $this->applyAdditionalCriteria($query, $criteria);
 
         $pager = new Pager();
         $pager->setMaxPerPage($limit);
