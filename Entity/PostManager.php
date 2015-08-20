@@ -9,6 +9,7 @@ use Sonata\DoctrineORMAdminBundle\Datagrid\ProxyQuery;
 use Confl1kt\NewsBundle\Model\BlogInterface;
 use Confl1kt\NewsBundle\Model\PostInterface;
 use Confl1kt\NewsBundle\Model\PostManagerInterface;
+use Doctrine\ORM\QueryBuilder;
 
 class PostManager extends BaseEntityManager implements PostManagerInterface
 {
@@ -133,7 +134,7 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
             $parameters['collectionid'] = $criteria['collection']->getId();
         }
 
-        $this->applyAdditionalCriteria($criteria);
+        $this->applyAdditionalCriteria($query, $criteria);
 
         $query->setParameters($parameters);
 
@@ -183,7 +184,7 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
         return $pcqp;
     }
 
-    protected function applyAdditionalCriteria(array $criteria = [])
+    protected function applyAdditionalCriteria(QueryBuilder $queryBuilder, array $criteria = [])
     {
 
     }
