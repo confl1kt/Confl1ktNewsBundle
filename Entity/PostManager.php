@@ -138,6 +138,11 @@ class PostManager extends BaseEntityManager implements PostManagerInterface
 
         $this->applyAdditionalCriteria($query, $criteria);
 
+        return $this->createPager($query, $limit, $page);
+    }
+
+    protected function createPager(QueryBuilder $query, $limit, $page)
+    {
         $pager = new Pager();
         $pager->setMaxPerPage($limit);
         $pager->setQuery(new ProxyQuery($query));
